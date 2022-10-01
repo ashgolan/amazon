@@ -1,0 +1,487 @@
+@import url(//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember);
+html {
+  overflow: scroll;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Amazon Ember";
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+.body {
+  overflow: hidden;
+}
+.nav-bar {
+  height: 60px;
+  background-color: #131921;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.nav-bar ul li {
+  margin: 0.5% 0.2%;
+  padding: 0.4% 0.6%;
+  max-height: 45px;
+  /* line-height: 20px; */
+}
+
+.nav-bar ul .logo img {
+  width: 100px;
+}
+.nav-bar ul li:first-child:hover,
+.nav-bar ul li:nth-child(2):hover,
+.nav-bar ul li:nth-child(4):hover,
+.nav-bar ul li:nth-child(5):hover,
+.nav-bar ul li:nth-child(6):hover,
+.nav-bar ul li:nth-child(7):hover {
+  border: 1px white solid;
+  border-radius: 4px;
+}
+
+.search-form {
+  background-color: white;
+  display: flex;
+  border: 1px solid currentColor;
+  width: 730px;
+  height: 75%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.dropdown-menu {
+  border: none;
+  width: 10%;
+  background-color: #f3f3f3;
+  font-size: 14px;
+  text-align: center;
+}
+
+.search-form input {
+  border: none;
+  margin: 0;
+  padding: 8px 8px;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+}
+.search-form .icon-search {
+  width: 8%;
+  background-color: #febd69;
+  border: none;
+  text-align: center;
+}
+.search-form .icon-search i {
+  font-size: 20px;
+  height: 100%;
+  margin-top: 15%;
+}
+
+.deliver-container {
+  display: flex;
+  color: white;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.deliver-container .deliver-left-icon {
+  flex: 1 1 30%;
+  align-self: center;
+  text-align: end;
+}
+.deliver-container .deliver-left-icon img {
+  width: 15px;
+  height: 18px;
+}
+.deliver-container .deliver-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1 1 70%;
+  white-space: nowrap;
+  color: white;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.second-line {
+  height: 39px;
+  background-color: #232f3e;
+}
+.third-line {
+  height: 50px;
+  background-color: #d8f7eb;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  align-items: center;
+  padding: 1%;
+}
+.fourth-line {
+  height: 35px;
+  background-color: #fafafa;
+  border-top: 1px #cccccc solid;
+}
+.fourth-line ul li:hover {
+  color: orange;
+  border-bottom: 1px orange solid;
+}
+.last-line {
+  border-top: 1.7px #cccccc solid;
+  border-bottom: 1px #cccccc solid;
+  height: 60px;
+  background-color: #f7f8f8;
+}
+.last-line ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.last-line ul li {
+  color: black;
+  font-size: 12px;
+}
+
+.last-line .prime {
+  font-size: 12px;
+  color: #b12704;
+  text-align: start;
+}
+
+.title-pargraph p {
+  font-size: 12px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.dropdown-lang {
+  background-color: transparent;
+  width: 50px;
+  border: none;
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* .dropbtn-lang {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 14px;
+} */
+.language .dropdown-lang .dropbtn-lang .flag-img {
+  width: 25px;
+  height: 15px;
+  background-color: rebeccapurple;
+  background-image: url("https://m.media-amazon.com/images/S/sash/fe2UeLQmJ11kKHN.png");
+}
+.dropdown-lang .dropdown-content li {
+  padding-bottom: 10px;
+}
+.dropdown-lang .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown-lang:hover .dropdown-content {
+  display: block;
+}
+.dropdown-menu-order {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+}
+.account label {
+  font-size: 12px;
+}
+.account {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.dropdown-menu-order .dropdown-order {
+  color: rgb(0, 0, 0);
+}
+
+.orders {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: white;
+}
+.cart span {
+  color: white;
+}
+.cart .cart-img {
+  width: 40px;
+  position: relative;
+}
+.cart span::before {
+  content: "0";
+  position: absolute;
+  font-size: 15px;
+  font-weight: bold;
+  color: orange;
+  top: 1.5%;
+  left: 94.75%;
+}
+.second-line ul {
+  display: flex;
+}
+.second-line ul li {
+  padding: 10px;
+}
+.second-line ul li a {
+  padding: 3px;
+  color: white;
+  font-size: 14px;
+}
+.second-line ul li a:hover {
+  border: 1px white solid;
+  cursor: pointer;
+}
+.fourth-line ul {
+  display: flex;
+  font-size: 12px;
+  color: black;
+  padding: 10px;
+}
+.fourth-line ul li {
+  margin-left: 20px;
+}
+.main-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main-container .list-photos-left ul li {
+  width: 100px;
+}
+.main-container .list-photos-left ul li img {
+  width: 40%;
+  border: 0.5px rgb(145, 145, 145) solid;
+  padding: 5px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+.main-container .list-photos-left ul li img:hover {
+  border: 1px rgb(219, 6, 6) solid;
+  cursor: pointer;
+  box-shadow: 0 0 5px #ec2424;
+}
+.main-container .big-photo {
+  flex: 1 1 30%;
+  align-self: flex-start;
+}
+.main-container .big-photo {
+  position: sticky;
+  top: 0;
+}
+.main-container .description {
+  flex: 1 1 35%;
+  padding: 30px;
+}
+
+.main-container .description h3 {
+  font-size: 26px;
+  font-weight: lighter;
+}
+.main-container .description a,
+.main-container .details-price a {
+  font-size: 14px;
+  color: rgb(21, 114, 168);
+}
+
+.main-container .description ul {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.5px rgb(223, 214, 214) dotted;
+}
+.main-container .description ul li {
+  padding: 3px;
+  font-size: 14px;
+}
+.main-container .description label {
+  color: rgb(85, 82, 82);
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+.main-container .pargraphs {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.main-container .pargraphs li {
+  list-style: circle;
+}
+.details-price-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 25%;
+}
+.main-container .details-price {
+  flex-basis: 15%;
+  border: 0.5px rgb(192, 187, 187) dotted;
+  padding: 20px;
+  margin-right: 5%;
+}
+.main-container .details-price label {
+  display: block;
+  margin: 15px 0;
+  font-size: 14px;
+}
+.main-container .details-price .Qty {
+  display: block;
+  border-radius: 30px;
+  width: 70px;
+  font-size: 12px;
+  padding: 5px;
+  background-color: rgb(241, 241, 241);
+}
+.main-container .details-price select option {
+  width: 80px;
+  font-size: 14px;
+  padding: 20px;
+}
+.main-container .details-price button {
+  font-size: 12px;
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+}
+
+.main-container .details-price .secure {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main-container .details-price .ships {
+  display: flex;
+  justify-content: space-around;
+}
+.main-container .details-price .ships .ships-from {
+  display: flex;
+  flex-direction: column;
+}
+.main-container .details-price .ships .sold-by {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container .details-price .ships a,
+.main-container .details-price .ships label {
+  font-size: 12px;
+}
+.main-container .details-price .return-policy {
+  margin-top: 30px;
+  font-size: 14px;
+}
+.main-container .details-price .gift-recipt {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  border-bottom: 0.5px rgb(202, 196, 196) dotted;
+  padding-bottom: 40px;
+}
+.main-container .details-price .gift-recipt span {
+  font-size: 12px;
+}
+.sell-on-amazon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+}
+.sell-on-amazon label,
+.sell-on-amazon button {
+  padding: 10px;
+  font-size: 12px;
+}
+
+.sell-on-amazon button {
+  background-color: transparent;
+  border: 0.5px rgb(148, 194, 236) dotted;
+  border-radius: 4px;
+}
+
+.left-bottom-card {
+  margin-top: 20px;
+  margin-right: 5%;
+  border: 0.5px rgb(187, 177, 177) dotted;
+  text-align: center;
+}
+.left-bottom-card label {
+  display: block;
+}
+.left-bottom-card p {
+  font-size: 12px;
+}
+.carousel {
+  border-bottom: 0.5px rgb(160, 155, 155) dotted;
+  margin: 10px 20px;
+}
+.carousel-photos {
+  display: flex;
+  justify-content: space-around;
+}
+.lang-flag {
+  display: flex;
+}
+.flag {
+  background-image: url("https://m.media-amazon.com/images/S/sash/fe2UeLQmJ11kKHN.png");
+  background-position: 0px -130px;
+  width: 24px;
+  height: 18px;
+}
+.stars {
+  background-image: url("https://m.media-amazon.com/images/S/sash/ouR9NRElwmzAIev.png");
+  background-position: -2px -42px;
+  width: 80px;
+  height: 20px;
+
+  margin-right: 10px;
+}
+.stars-and-value {
+  display: flex;
+}
+.carousel-photos .card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 10%;
+}
+.carousel-photos .card a {
+  margin-top: 20px;
+  color: rgb(34, 81, 134);
+}
+.carousel-photos .card .stars-and-value label {
+  font-size: 14px;
+  color: rgb(34, 81, 134);
+}
+
+.arrow-right,
+.arrow-left {
+  align-self: center;
+  font-size: 20px;
+  border: 0.5px rgb(188, 203, 219) dotted;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
