@@ -1,6 +1,6 @@
 @font-face {
   font-family: "amazon-ember";
-  src: url("/fonts/Amazon\ Ember\ V2.ttf");
+  src: url(/fonts/Amazon\ Ember\ V2.ttf);
 }
 html {
   overflow: scroll;
