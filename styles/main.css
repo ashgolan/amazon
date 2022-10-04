@@ -32,6 +32,7 @@ html {
   padding: 0.4% 0.6%;
   max-height: 45px;
   /* line-height: 20px; */
+  border: 1px solid transparent;
 }
 
 .nav-bar ul .logo img {
@@ -236,7 +237,7 @@ html {
   font-weight: bold;
   color: orange;
   top: 1.5%;
-  left: 94.75%;
+  left: 95.75%;
 }
 .second-line ul {
   display: flex;
@@ -245,6 +246,7 @@ html {
   padding: 10px;
 }
 .second-line ul li a {
+  border: 1px solid transparent;
   padding: 3px;
   color: white;
   font-size: 14px;
